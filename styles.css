@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #F5F5F5;
+}
+
+header {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-lista {
+    display: flex;
+    gap: 20px;
+}
+
+.header-lista-item:nth-child(1),
+.header-lista-item:nth-child(2),
+.header-lista-item:nth-child(3),
+.header-lista-item:nth-child(4),
+.header-lista-item:nth-child(5) {
+    display: none;
+}
+
+section.profile {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.profile-photo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.profile-title,
+.sobre-mi-title,
+.skills-title,
+.hobbies-title,
+.formacion-title,
+.proyectos-title,
+.contacto-title {
+    font-size: 22px;
+}
+
+.profile-description {
+    font-size: 14px;
+}
+
+.profile-list {
+    display: flex;
+    gap: 8px;
+}
+
+.profile-list-item a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.profile-flecha {
+    width: 10px;
+}
+
+section.sobre-mi {
+    background-color: #EAF2FD;
+    padding: 16px;
+}
+
+.sobre-mi-description {
+    font-size: 14px;
+}
+
+.sobre-mi-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sobre-mi-firma {
+    width: 140px;
+}
+
+section.skills,
+section.hobbies {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+}
+
+.skills-container,
+.hobbies-container {
+    text-align: start;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skills-box,
+.hobbies-box {
+    background-color: white;
+    padding: 16px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.skills-box svg,
+.hobbies-box svg {
+    width: 30px;
+}
+
+section.formacion {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+}
+
+.formacion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: start;
+}
+
+.formacion-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formacion-relleno {
+    background-color: white;
+    height: 118px;
+}
+
+.formacion-date {
+    font-size: 14px;
+}
+
+section.proyectos {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.proyectos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.proyectos-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.proyectos-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.proyectos-description {
+    font-size: 14px;
+}
+
+.proyectos-botones {
+    display: flex;
+    gap: 16px;
+}
+
+.proyectos-botones a {
+    padding: 10px;
+    border: 1px solid #2A7AE4;
+    font-weight: 500;
+}
+
+.proyectos-botones a:nth-child(1) {
+    color: #2A7AE4;
+}
+
+.proyectos-botones a:nth-child(2) {
+    color: white;
+    background-color: #2A7AE4;
+}
