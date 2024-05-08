@@ -151,6 +151,7 @@ section.formacion {
     flex-direction: column;
     gap: 32px;
     text-align: center;
+    background-color: #EAF2FD;
 }
 
 .formacion-container {
@@ -179,6 +180,7 @@ section.proyectos {
     padding: 32px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 16px;
 }
 
@@ -186,6 +188,7 @@ section.proyectos {
     display: flex;
     flex-direction: column;
     gap: 64px;
+    text-align: start;
 }
 
 .proyectos-box {
@@ -357,8 +360,107 @@ footer.footer {
     }
 }
 
-/* @media (min-width: 1440px) {
-    body {
-        background-color: blue;
+@media (min-width: 1440px) {
+
+    header {
+        padding: 32px 150px;
     }
-} */
+
+    .header-lista-item:nth-child(1),
+    .header-lista-item:nth-child(2),
+    .header-lista-item:nth-child(3),
+    .header-lista-item:nth-child(4),
+    .header-lista-item:nth-child(5) {
+        display: block;
+    }
+
+    .header-lista-item a {
+        font-weight: 700;
+    }
+
+    section.profile {
+        padding: 32px 150px;
+        gap: 64px;
+    }
+
+    .profile-photo {
+        width: 368px;
+    }
+
+    .profile-container {
+        gap: 24px;
+    }
+
+    .profile-title {
+        font-size: 52px;
+    }
+
+    .profile-description {
+        font-size: 22px;
+    }
+
+    section.sobre-mi {
+        padding: 64px 150px;
+    }
+
+    .sobre-mi-container {
+        width: 750px;
+    }
+
+    .sobre-mi-title,
+    .skills-title,
+    .hobbies-title,
+    .formacion-title,
+    .proyectos-title,
+    .contacto-title {
+        font-size: 32px;
+    }
+
+    .sobre-mi-description {
+        font-size: 16px;
+    }
+
+    section.skills,
+    section.hobbies {
+        padding: 32px 150px;
+    }
+
+    .skills-container,
+    .hobbies-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    section.formacion {
+        padding: 82px 150px;
+    }
+
+    section.proyectos {
+        padding: 32px 150px;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .proyectos-box {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .proyectos-box:nth-child(2),
+    .proyectos-box:nth-child(4) {
+        flex-direction: row-reverse;
+    }
+
+    .proyectos-box img {
+        height: 400px;
+    }
+
+    section.contacto {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    section.contacto img {
+        display: block;
+    }
+}
