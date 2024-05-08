@@ -296,3 +296,69 @@ footer.footer {
     padding: 32px;
     text-align: center;
 }
+
+@media (min-width: 768px) {
+
+    header {
+        padding: 16px 32px;
+    }
+
+    .header-lista-item a {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    section.profile {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 32px;
+        gap: 32px;
+    }
+
+    .profile-description,
+    .profile-list-item a {
+        font-size: 16px;
+    }
+
+    .profile-flecha {
+        width: 16px;
+    }
+
+    .profile-list {
+        gap: 32px;
+    }
+
+    .profile-photo {
+        width: 146px;
+    }
+
+    section.sobre-mi,
+    section.skills,
+    section.hobbies,
+    section.formacion,
+    section.proyectos,
+    section.contacto {
+        padding: 32px;
+    }
+
+    .skills-container,
+    .hobbies-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .formacion-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .formacion-box {
+        width: 224px;
+    }
+}
+
+/* @media (min-width: 1440px) {
+    body {
+        background-color: blue;
+    }
+} */
